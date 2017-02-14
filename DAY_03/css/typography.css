@@ -1,18 +1,11 @@
 body{
     margin: 0;
 }
+
 p{
-    /* 너비 */
-    width: 500px;
-    /* 높이 */
-    height: 200px;
-    /* 눈에 보이지 않는 투명 외부 공간 영역 mt0+mb0[tab]*/
     margin-top: 0;
-    margin-bottom: 20px;
-    /* 패딩(안쪽 공간) */
-    padding:10px;
-    background-color: #F88080;
-}
-p{
-    display: block;
+    padding:20px 40px;
+    background-color: #c22d2c;
+    color: #fff;
+    
 }
