@@ -51,7 +51,7 @@ table,td,th {
 	
 .content_wrap_01{
 	margin:0 auto;
-	padding:90px 0 0 20px;/*위-오른쪽-아래-왼쪽*/
+	padding:75px 0 0 20px;/*위-오른쪽-아래-왼쪽*/
 	width:1920px;
 	height: 600px;
 	position:relative;
@@ -153,8 +153,8 @@ table,td,th {
 	float: left;
 	display: block;
 	text-align:center;
-	align-content:center;
-	padding: 48px 0 0 0px;/*위-오른쪽-아래-왼쪽*/
+	align:center;
+	margin: 48px 0 0 0px;/*위-오른쪽-아래-왼쪽*/
 }
 
 .chip_01{
