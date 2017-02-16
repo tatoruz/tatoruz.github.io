@@ -2,17 +2,22 @@
 /* CSS Document */
 
 body{
-	width:100%;
+    width: 800px;
+    margin: 0 auto;
 	height:100%;
-	margin:0;
 	padding:0;
 	background-image:url(../images/bg_patten.png);
-	background-repeat:repeat;
 	text-align:left;
 	font-family: "Spoqa Han Sans";
-	align-content:center;
-	background-position: center center;
 	}
+p{
+    margin-top: 0;
+    margin-bottom: 1.5em;/*상대값*/
+    font-size: 16px;
+    font-family: "Spoqa Han Sans";
+    line-height: 1.5;/*버그 안생기기 위해 단위를 안씀*/
+    letter-spacing: -0.005em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
+}
 	
 ul{
 	font-size:16px;
@@ -44,7 +49,7 @@ table,td,th {
 	height: 100%;
 	display:block;
 	padding:0;
-	margin:auto 0;
+	margin-top:95px;
 	background-size: cover;/* cover :디바이저 화면에 따라 유동적으로 배경크기가 조절 됨 */
 	}
 	
@@ -52,7 +57,7 @@ table,td,th {
 	padding:0;
 	margin:0 0 0 30px;/*위-오른쪽-아래-왼쪽*/
 	width:1920px;
-	height: 600px;
+	height: 800px;
 	position:relative;
 	/*border: 1px solid blue;*/
 	}
@@ -97,9 +102,9 @@ table,td,th {
 	float: left;
 	}
 .typo_list p{
-	margin:-20px 0 30px 80px;
+	margin:-50px 0 30px 80px;
 }
-.h01{
+.h1{
 	font-size:52px;
 }
 .h02{
@@ -141,46 +146,44 @@ table,td,th {
 }
 
 .chip_01{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#787f94;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
+	margin-right:15px;/*위-오른쪽-아래-왼쪽*/
 }
 .chip_02{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#7171ef;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
+	margin-right:15px;/*위-오른쪽-아래-왼쪽*/
 }
 .chip_03{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#44cb83;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
 }
 .chip_04{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#63a2fc;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
 }
 .chip_05{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#ff5448;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
+
 }
 .chip_06{
-	width: 100px;
-	height:100px;
+	width: 80px;
+	height:80px;
 	background-color:#fcb409;
 	float:left;
-	margin:0 30px 48px 0;/*위-오른쪽-아래-왼쪽*/
+	
 }
 
 
