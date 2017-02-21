@@ -1,0 +1,84 @@
+body{
+    margin: 0 auto;
+    background: url("../images/21px.png")
+	}
+p{
+    margin-top: 0;
+    margin-bottom: 1.em;/*상대값*/
+    font-size: 14px;
+    font-family: "Spoqa Han Sans";
+    line-height: 1.5;/*버그 안생기기 위해 단위를 안씀*/
+    letter-spacing: -0.005em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
+    
+}
+
+h1,h2,h4,h5,h6/*일괄 적용되는 코드:그룹핑*/{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    letter-spacing: -0.07rem;/*1000으로 나눔 :자간-70값*/
+}
+
+h1,h2,h3,h4{
+    font-weight: 300;
+}
+h6{
+    font-size: 1.116rem;
+    line-height: 1rem;
+}
+h5{
+    font-size: 1rem;
+    line-height: 2.4rem;
+    color:#787f94;
+    font-weight: 500;
+}
+h4{
+    font-size: 3.125rem;
+    line-height: 2.4rem;
+}
+h3{
+    font-size: 3.906rem;
+    line-height: 4.8rem;
+    text-align: left;
+}
+h2{
+    font-size: 4.883rem;
+    line-height: 4.8rem;
+}
+h1{
+    font-size: 3.902rem;
+    line-height: 7.2rem;
+    color:#333741;
+}
+
+
+.container{
+    width: 819px;
+    min-height: 400vh;/*vh,vw 상대값 %는 쓰지 않는다!*/
+    /*mla+mra 한줄로 쓰지 않고 각각써주기*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 84px;
+    background-color: rgba(221, 221, 221, 0.3);
+}
+}
+.main{
+    margin:0;
+    padding: 0;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.footer{
+    margin-top:68px;
+    margin-bottom: 40px;
+    padding:0;
+}
+
+.top{
+    float:left;
+}
+.logo{
+    float: right;
+}
+
