@@ -4,23 +4,25 @@ body{
 	}
 p{
     margin-top: 0;
-    margin-bottom: 1.em;/*상대값*/
+    margin-bottom: 1.5em;/*상대값*/
     font-size: 14px;
     font-family: "Spoqa Han Sans";
     line-height: 1.5;/*버그 안생기기 위해 단위를 안씀*/
-    letter-spacing: -0.02em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
+    letter-spacing: -0.025em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
+	
     
 }
 
-h1,h2,h4,h5,h6/*일괄 적용되는 코드:그룹핑*/{
+h1,h5,h6/*일괄 적용되는 코드:그룹핑*/{
     text-align: center;
     margin-top: 0;
     margin-bottom: 2.4rem;
-    letter-spacing: -0.07rem;/*1000으로 나눔 :자간-70값*/
+    letter-spacing: -0.05rem;/*1000으로 나눔 :자간-70값*/
 }
 
-h1,h2,h3,h4{
+h1,h3{
     font-weight: 300;
+	letter-spacing: -0.05rem;/*1000으로 나눔 :자간-70값*/
 }
 h6{
     font-size: 1.116rem;
@@ -32,21 +34,13 @@ h5{
     font-size: 1rem;
     line-height: 1.5;
     color:#787f94;
-    font-weight: 400;
+    font-weight: 500;
 }
-h4{
-    font-size: 3.125rem;
-    line-height: 2.4;
-}
+
 h3{
     font-size: 2.263rem;
     line-height: 1.4;
-    text-align: left;
     margin-bottom:15px
-}
-h2{
-    font-size: 4.883rem;
-    line-height: 4.8;
 }
 h1{
     font-size: 3.902rem;
@@ -74,35 +68,40 @@ img{
     margin-right: auto;
     margin-bottom: 7px;
 }
-.sectionImportant > p{
-    padding-bottom: 7px;
+
+.sectionImportant > ol{
+	margin-top:12px;
 }
-.listitem{
-    margin-top: 38px;
-    margin-left:-20px;
-    color:#787f94;
-    font-weight:600;
-}
-li.listitem > p {
+
+li{
     color:#333741;
-    margin-left:-17px;
-    margin-top:21px;
-    margin-bottom: 22px;
+    margin-left:-21px;
+	padding-top:22px;
+    margin-bottom: 12px;
     font-weight:500;
 }
 
+.listitem{
+    color:#787f94;
+    font-weight:600;
+}
+p.list_text{
+	margin-left:-20px;
+	}
+
 .sectionImportant,.section_qanda {
-    margin-bottom: 64px;
+    margin-bottom: 63px;
 }
 .section_qanda > ul{
-    margin-left:-38px;
+    margin-left:-18px;
     list-style-type:none;
 }
 .question{
+	line-height:1.5;
     font-weight: 600;
 }
 .answer{
-    line-height:1.8;
+    line-height:1.5;
     margin-bottom:21px;
 }
 
