@@ -1,56 +1,118 @@
+/*언어설정*/
+@charset "UTF-8";
+/*저작권 표시는 느낌표*/
+/*! style.css @tatoruz.nert, 2017*/
+
+html{
+    /*rem 단위의 기준값은 html에 써줘야 됨. 그래야지만 폰트사이즈 설정시 편함.*/
+     font-size: 10px;
+}
+
 body{
-    margin: 0 auto;
-    background: url("../images/21px.png")
-	}
-p{
-    margin-top: 0;
-    margin-bottom: 1.5em;/*상대값*/
-    font-size: 14px;
-    font-family: "Spoqa Han Sans";
-    line-height: 1.5;/*버그 안생기기 위해 단위를 안씀*/
-    letter-spacing: -0.025em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
-	
+    /*경로 나가서../*/
+    margin: 0;
+    min-height:100vh;/*min-height min=최소*/
+    background: url("../images/21px.png");
     
-}
+    /* 본문 디자인(상속)*/
 
-h1,h5,h6/*일괄 적용되는 코드:그룹핑*/{
-    text-align: center;
+    /* 바디에서는 폰트 속기형으로 줄여쓰기 사이즈랑 패밀리는 필수*/
+    /* 속기형 font: 1.4em/1.5  "Spoqa Han Sans" */
+    /* font: [두께] [기울기] [응용] 크기[/행간] 글꼴;*/
+
+    /*font-family: "Spoqa Han Sans";
+    font-size:1.4rem;/* html에다가 10px으로(기본값정해놓음) 써놨기때문에 바디 폰트 사이즈를 px로 쓰지 않고 1.4rem 으로 씀!*/
+    font: 1.4rem/1.5 "Spoqa Han Sans";
+    line-height:1.5;/* css는 상속이라는 매커니즘을 사용하다보니 단위를 붙이면 버그가 발생*/
+    letter-spacing: -0.02em;/* 1000/20 글자에 상대적이면 em, html 폰트사이즈에 상대적이면 rem*/
+    color:#333741;
+
+	}
+
+/* 제목/단락 공통 디자인*/
+h1,h2,h3,h4,h5,h6, p{
     margin-top: 0;
-    margin-bottom: 2.4rem;
-    letter-spacing: -0.05rem;/*1000으로 나눔 :자간-70값*/
+    /* margin-bottom: 1.5em; 글자크기에 맞춰서 맞춰지기 때문에 사용x */
+    margin-bottom: 2.1rem;
 }
 
-h1,h3{
+/* 제목 공통 디자인 */
+h1,h2,h3,h4,h5,h6{
+    letter-spacing:-0.05em;
+    }
+h1,h2,h3,h4{
     font-weight: 300;
-	letter-spacing: -0.05rem;/*1000으로 나눔 :자간-70값*/
+    }
+h5,h6{
+    font-weight: 400;
+    line-height: 2.1rem;
+    }
+
+/* 제목 개별 디자인 */
+h1{
+    font-size: 5.463rem; /*기본값인 10으로 나눠야하니까*/
+    line-height:6.3rem; 
+    }
+/*h2{}*/
+h3{
+    font-size: 3.169rem;
+    line-height: 4.2rem;
+    }
+/*h4{}*/
+h5{
+    font-size: 1.838rem;
+    color:#787f94;
 }
 h6{
-    font-size: 1.116rem;
-    line-height:0.7;
-    font-weight:500;
+    font-size: 1.563rem;
     color:#47494e;
 }
-h5{
-    font-size: 1rem;
-    line-height: 1.5;
-    color:#787f94;
-    font-weight: 500;
+
+
+/* 목록 공통 디자인*/
+ul, ol{
+    /* 웹 브라우저 기본 스타일(User Agent Style) 제거 */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
 }
 
-h3{
-    font-size: 2.263rem;
-    line-height: 1.4;
-    margin-bottom:15px
-}
-h1{
-    font-size: 3.902rem;
-    line-height: 0.5;
-    color:#333741;
+/* 목록 개별 디자인 */
+/*ol{}
+ul{}*/
+
+/* 목록 개별 디자인 */
+li{
+    margin-bottom: 4.2rem;
 }
 
+/* 하이퍼링크 디자인 */
+a[href] {
+    color:#3292a7;
+    text-decoration:none;
+}
+
+/* 상태디자인
+    기본 상태 (normal state:link)
+    방문한 상태(visited state: visited)
+    마우스가 올라간 상태 (hover state : hover)
+    클릭한(활성) 상태 (Active state: active)
+    포커스 상태(focus state:focus)
+    비활성 상태 (deactive state)
+*/
+
+a[href] {
+    color:#227e92;
+    text-decoration: underline;
+}
+/* 블록 요소 내, 이미지 하단 공간 제거*/
 img{
-    margin-top:-14px;
+    vertical-align: bottom;
 }
+
+/* ----- 이 위에는 수정할 때 건들지 않기 ---- */
+
 
 .container{
     width: 820px;
@@ -61,63 +123,10 @@ img{
     /*background-color: rgba(221, 221, 221, 0.3);*/
 }
 .header{
-    padding-top: 84px;
+    margin-top: 84px;
 }
 .main{
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 7px;
 }
-
-.sectionImportant > ol{
-	margin-top:12px;
-}
-
-li{
-    color:#333741;
-    margin-left:-21px;
-	padding-top:22px;
-    margin-bottom: 12px;
-    font-weight:500;
-}
-
-.listitem{
-    color:#787f94;
-    font-weight:600;
-}
-p.list_text{
-	margin-left:-20px;
-	}
-
-.sectionImportant,.section_qanda {
-    margin-bottom: 55px;
-}
-.section_qanda > ul{
-    margin-left:-18px;
-    list-style-type:none;
-}
-.question{
-	line-height:1.5;
-    font-weight: 600;
-}
-.answer{
-    line-height:1.5;
-    margin-bottom:21px;
-}
-
-.qanda_item{
-    line-height:0.5;
-}
-.footer{
-    padding-top: 10px;
-    margin-bottom: 40px;
-}
-
-.top{
-    float:left;
-}
-.logo{
-    float: right;
-    padding-top:22px;
-}
-
