@@ -124,9 +124,28 @@ img{
 }
 .header{
     margin-top: 84px;
+    text-align:center;
+}
+
+.sectionImportant > h3{
+    margin-top:42px;
 }
 .main{
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 7px;
+    text-align:left;
+}
+
+.question{
+      font-weight: 700;
+}
+
+.top{
+    float:left;
+    
+}
+.logo{
+    margin-top:21px;
+    float:right;
 }
