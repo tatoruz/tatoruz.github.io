@@ -130,7 +130,9 @@ img{
 .sectionImportant > h3{
     margin-top:42px;
 }
-
+.sectionImportant > ul{
+    padding-top: 21px;
+}
 
 .section_qanda{
     padding-top: 21px;
