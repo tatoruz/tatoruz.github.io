@@ -1,0 +1,107 @@
+/*언어설정*/
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+.wapper{
+    /* width, height 속성은 inline*/
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4rem auto;
+}
+hr{
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 1px solid #c2d6d1;
+}
+.block-box, .inline-box{
+    width: 200px;
+    height: 200px;
+    /* margin,border,padding의 top, bottom은 inline 요소에는 적용되지 않는다.(간격이 벌어지지않는다.*/
+    /* a요소(버튼)값에 높이값을 주기 위해 display를 block으로 속성을 바꿈! block에서 inline으로 바꾸는 경우는 없다*/
+    padding: 20px;
+    margin: 30px;
+    border:10px solid red;
+    background-color: #3fb5c8;
+    color:#fff;
+}
+
+.inline-block-box{
+    /* 화면 표시 방법: inline-block 변경 */
+    /* 
+        기본적으로 inline 처럼 보이지만,
+        block 처럼 레이아웃 설정이 가능하다.
+        상/하 공간 설정 가능.
+        width/height 설정 가능
+    */
+    display:inline-block;
+    width: 300px;
+    background-color: #25a04d;
+    color:#ffd219;
+}
+
+/* 고스트 버튼 */
+.ghost-style-link{
+    display:inline-block;
+
+    margin: 20px;
+    border: 3px solid currentColor;/* 폰트색상을 같게함 */
+    padding:0.9375em 1.25em 0.625em;/* 15/16(상), 20/16(좌우),10/16(하)*/
+    
+    
+    font-size: 1rem;/*폰트크기16 높이 15 좌우 20 바텀 10 상대값*/
+    text-weight:300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color:#3fb5c8;
+
+    transition:all 0.4s ease;
+}
+
+.ghost-style-link:hover{
+    border-color:#3fb5c8;
+    color:#fff;
+    background:#3fb5c8;
+}
+
+.ghost-style_02{
+    display:inline-block;
+   
+    margin: 20px;
+    border: 3px double currentColor;/* 폰트색상을 같게함 */
+    padding:0.9375em 1.25em 0.625em;/* 15/16(상), 20/16(좌우),10/16(하)*/
+    
+    font-size: 1rem;/*폰트크기16 높이 15 좌우 20 바텀 10 상대값*/
+    text-weight:300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color:#ffd219;
+    
+    transition:all 0.4s ease;
+}
+
+.ghost-style_02:hover{
+    border-color:red;
+    color:#fff;
+    background:#ffd219;
+}
+
+.album-image{
+    width: 100%;
+    height:auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border: 8px solid blue;
+    padding:20px;
+    background-color: red;
+
+}
