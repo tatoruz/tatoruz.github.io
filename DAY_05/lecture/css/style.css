@@ -12,7 +12,7 @@ body{
     /*경로 나가서../*/
     margin: 0;
     min-height:100vh;/*min-height min=최소*/
-    background: url("../images/21px.png");
+    /*background: url("../images/21px.png");*/
     
     /* 본문 디자인(상속)*/
 
