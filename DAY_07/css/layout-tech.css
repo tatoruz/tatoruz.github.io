@@ -1,5 +1,15 @@
 /*언어설정*/
 @charset "UTF-8";
+/* :가상 클래스 vs  ::가상요소(Pseudo Element); */
+p::-moz-selection {
+    background:#efd4c6;
+    color:#7b6d66;
+}
+/* p 태그만 먹게끔/ *모든걸 의미 생략가능*/
+p::selection {
+    background:#efd4c6;
+    color:#7b6d66;
+}
 
 body{
     margin: 0;
@@ -98,8 +108,13 @@ hr{
 .album-image{
     margin-top: 30px;
     margin-bottom: 0;
-    border: 8px solid blue;
+    border: 8px solid lightgray;
     padding:12px;
     background-color: red;
+    transition: border-color 0.034s ease;
+}
+
+.album-image:hover{
+    border-color: blue;
 
 }

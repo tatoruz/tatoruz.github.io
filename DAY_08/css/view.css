@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html:{
+
+}
+
+body{
+    margin: 0;
+}
+
+
+.v-hidden{
+    color:red;
+    visibility: hidden;/*화면에서 사라지지만 영역은 남아서 보임*/
+}
+
+.hidden{
+    color:lightpink;
+    /*visibility: hidden;*/
+    display:none;/*화면에서 사라지고 영역도 사라짐*/
+}

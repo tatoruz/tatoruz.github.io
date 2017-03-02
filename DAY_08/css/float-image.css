@@ -1,0 +1,13 @@
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.article{
+    font-size: 29px;
+}
+
+.aricle__media{
+    float:left;
+    margin-right: 20px;
+}
