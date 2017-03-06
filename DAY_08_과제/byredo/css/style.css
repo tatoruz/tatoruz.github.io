@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	font-size:10px;
+	}
+	
+body{
+	margin: 0 auto;
+    background: url("../images/21px.png");
+	overflow-y:scroll;
+	}
+	
+p{
+	margin-top: 0;
+    margin-bottom: 1.5em;/*상대값*/
+    font-size: 14px;
+    font-family: "Spoqa Han Sans";
+    line-height: 1.5;/*버그 안생기기 위해 단위를 안씀*/
+    letter-spacing: -0.025em;/*문자간격 포토샵에서 -5일경우 1000으로 나눠서 적어야함*/
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+	border: 0;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: normal;
+    line-height: inherit;
+    vertical-align: top;
+}
+
+ul,li,dl{
+	list-style-type:none;
+	}
+	
+.wrap{
+	width: 100%;
+    min-height: 320vh;/*vh,vw 상대값 %는 쓰지 않는다!*/
+    /*mla+mra 한줄로 쓰지 않고 각각써주기*/
+    background-color: rgba(221, 221, 221, 0.3);
+	}
+
+
+/* 상단 */	
+header .gndBeauty{
+	width:1868px;
+	height:90px;
+	font-size:1.2rem;
+	color:#333;
+	}
+	
+h1{
+	width:240px;
+	height:69px;
+	padding-top: 10px;
+	padding-left:30px;
+	float:left;
+}
+
+.gndArea{
+	margin: 0;
+	padding:0;
+	top:20px;
+	bottom:48px;
+	}
+	
+.gnb{
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+.depthFashion, .depthBeauty, .depthLiving{
+	font-family: "Malgun Gothic", "Apple SD Gothic Neo", "tdDot", "naMj";
+    font-size: 12px;
+    position: relative;
+	}
+
+
+.gndArea ul li{ 
+	display:inline-block;
+	margin-left:15px;
+	margin-right:15px;
+	float:left;
+	text-align:center;
+	
+	}
+
+.gndArea dt{
+	display:inline-block;
+	font-weight:700;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:1.8rem;
+	letter-spacing:1.8;
+	margin-left:13px;
+	margin-right:13px;
+	}
+		
+.depthFashion dt{
+	display:inline-block;
+	width:68px;
+	height:21px;
+	}
+.depthBeauty dt{
+	display:inline-block;
+	width:68px;
+	height:21px;
+	
+	}
+.depthLiving dt{
+	display:inline-block;
+	width:68px;
+	height:21px;
+	
+	}
+	
+.v-hidden{
+	display:none;
+	}
+.v-hidden:hover{
+	display:inline-block
+	color:red;
+	border:1px solid red;
+	}
