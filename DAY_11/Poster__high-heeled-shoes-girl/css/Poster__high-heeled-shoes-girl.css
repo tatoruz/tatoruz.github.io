@@ -129,8 +129,11 @@ img {
    top: 0px;
 }
 
-.wrap.fin .title,
+.title{
+  filter:grayscale(100%);
+  opacity:1;
+}
 .wrap:hover .title {
-  filter:grayscale(0%);/*흑백모드*/
+  filter:grayscale(0%);
   opacity:1;
 }
