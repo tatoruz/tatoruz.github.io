@@ -1,0 +1,69 @@
+
+body{
+    margin: 0;
+}
+
+.parent-box{
+    
+    -moz-box-sizing: border-box;/*박스의 사이즈를 보더라인까지 포함해라/마진은 포함되지않음*/
+    height: 100vh;
+    border:10px solid #c1c1c1;
+    position:relative;
+}
+/*부모에게 높이값을 줘야함!*/
+.box{
+    width: 500px;
+    height: 330px;
+    color:#000;
+    text-align:center;
+    line-height:330px;/* 텍스트를 박스에서 중심으로 갈때 높이값이랑 똑같이 적어주면 됨!*/
+    position:relative;
+}
+/*가상클래스 부모로부터의 순서/순번으로 지정 할 수 있다
+first-child,last-chaild,(2n)으로 줄수있다*/
+.box:nth-child(1){ background:pink;}
+.box:nth-child(2){ background:orange;}
+.box:nth-child(3){ background:skyblue;}
+.box:nth-child(4){ background:red;}
+
+/* z-index:는 10단위로 줘야함.*/
+.target_lt{
+    position: absolute;
+    left:0;
+    top: 0;
+
+}
+
+.target_rt{
+    position:absolute;
+    right:0;
+    top:0
+}
+
+
+.target_rb{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.target_lb{
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:10;
+}
+
+.target_ct{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /*top:50%;
+    left:50%;
+    margin-top: -90px;/* 세로 180/2
+    margin-left: -100px;/* 가로 200/2 */
+}
+
