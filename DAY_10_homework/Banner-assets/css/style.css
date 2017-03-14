@@ -10,11 +10,12 @@ body{
 	height:100vh;
 	padding:0;
 	background: radial-gradient(#000, #46353f 80%);
-	display: hidden;
+	
 	}
 
 
 .banner{
+	overflow: hidden;
 	position:absolute;
 	width:800px;
 	height:320px;
