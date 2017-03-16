@@ -1,0 +1,47 @@
+/*언어설정*/
+@charset "UTF-8";
+
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    background-image: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+}
+
+.wapper{
+    /* width, height 속성은 inline*/
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4rem auto;
+}
+
+
+.ghost-style-link{
+    display:inline-block;
+
+    margin: 40px;
+    border: 2px solid currentColor;/* 폰트색상을 같게함 */
+    padding:0.9375em 1.25em 0.625em;/* 15/16(상), 20/16(좌우),10/16(하)*/
+    
+    
+    font-size: 2rem;/*폰트크기16 높이 15 좌우 20 바텀 10 상대값*/
+    text-weight:300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color:#fff;
+
+    transition:all 0.4s ease;
+}
+
+.ghost-style-link:hover{
+    border-color:#3fb5c8;
+    color:#fff;
+    background:#3fb5c8;
+}

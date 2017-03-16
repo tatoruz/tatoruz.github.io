@@ -1,0 +1,28 @@
+body{
+    margin: 100px auto;
+    width: 650px;
+
+}
+
+
+.dropcap{
+    line-height: 1.5;
+}
+
+/*.dropcap .dropcap__first-child{
+    float:left;
+    margin-right: 20px;
+    color:red; 
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1;
+}*/
+
+.dropcap::first-letter{
+    float:left;
+    margin-right: 20px;
+    color:red; 
+    font-size: 30px;
+    font-weight: 900;
+    text-transform:uppercase;/*대문자로만*/
+}
