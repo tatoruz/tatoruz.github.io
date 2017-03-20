@@ -1,0 +1,46 @@
+
+
+body{
+    margin: 0;
+    height:100vh;
+    background: radial-gradient(circle, #333, gray);
+}/*색상값 앞에가 중심색(시작점) ,뒤에가 테두리색(끝점) 크기는  %로 로케이션값이 줄어들면 중간 원이 작아짐 0%는 생략*/
+
+.album{
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+    
+}
+
+.album * {position:absolute;}
+/* 별표를 주면 포함하고있는 모든것*/
+
+/* 코딩을 쓸때 마크업을 생각해서 제일 뒤에있는 이미지를 먼저씀!*/
+.album_disk{
+    left: 61px;
+    top: -3px;
+}
+.album_disk.is-rotate{
+    animation: rotate-disk 6s infinite;
+}
+
+@keyframes rotate-disk {
+    0%{transform: rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.album_vynil{
+    left: 254px;
+    top: -3px;
+}
+
+.album_cover{/*box-shadow: x y blur spread color;*/
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.4);
+    border-radius:3px;
+    }

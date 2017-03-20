@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    height:100vh;
+    background: radial-gradient(circle, #000f26, #021f47 80%);
+}
+
+.poster{
+    width:1000px;
+    height:1000px;
+    
+    position:absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+
+    background-color:#000;
+    
+
+    text-align:center;
+}
+
+.poster:hover{
+    background:url(../images/bg.jpg);
+}
