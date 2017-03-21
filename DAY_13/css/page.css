@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*! page.css © yamoo9.net, 2017 */
+
+html{
+    overflow-y:visible;
+    min-height:20vh;
+}
+
+
+/* page-header 
+    #26d092
+    24px * 3 =72px
+*/
+a{
+    text-decoration: none;
+}
+.page-header{
+    min-height:72px;
+    background:#26d092;
+}
+
+.page-header .brand {
+    font-family: "Apple Chancery";
+    font-size: 1.875rem;
+    letter-spacing: -0.025em;
+ }
+
+.brand{
+    font-size:25px;
+    line-height:20px;
+}
+
+.brand a {
+  display: block;
+  margin-top: 21px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* gnb영역 */
+.gnb li{
+    float:left;
+    margin-right:43px;
+}
+
+.gnb li:last-child{
+    margin-right:0px;
+}
+.page-main{
+    min-height:300px;
+    background:hsla(0, 100%, 50%, 0.1);
+
+}
