@@ -26,7 +26,6 @@ a{
  }
 
 .brand{
-    font-size:25px;
     line-height:20px;
 }
 
@@ -38,6 +37,12 @@ a{
 }
 
 /* gnb영역 */
+.gnb {
+    margin-top: 27px;
+    position: relative;
+    left: 19px;
+}
+
 .gnb li{
     float:left;
     margin-right:43px;
@@ -46,8 +51,34 @@ a{
 .gnb li:last-child{
     margin-right:0px;
 }
+
+.gnb a{
+    font-size:22px;
+    letter-spacing: -0.05em;/*1000/5*/
+    text-decoration: none;
+    color:#FFF;
+    
+}
 .page-main{
     min-height:300px;
     background:hsla(0, 100%, 50%, 0.1);
 
+}
+
+.btn a {
+    width: 90px;
+    line-height:30px;
+    font-size:30px;
+    color:#fff;
+    position:relative;
+    left:50px;
+    top:130px;
+    
+    border:15px solid #333;
+
+}
+
+
+.btn a:hover {
+    margin: 30px;
 }
